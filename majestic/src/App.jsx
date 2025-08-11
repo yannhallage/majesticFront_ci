@@ -9,6 +9,8 @@ import TheatersPage from '@/pages/TheatersPage';
 import TheaterDetailsPage from '@/pages/TheaterDetailsPage';
 import EventsPage from '@/pages/EventsPage';
 import OnStagePage from '@/pages/OnStagePage';
+import OffrePage from './pages/price';
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <Route path="salles/:id" element={<TheaterDetailsPage />} />
           <Route path="theatre" element={<OnStagePage />} />
           <Route path="evenements" element={<EventsPage />} />
+          <Route path="OffrePage" element={<OffrePage />} />
         </Route>
       </Routes>
       <Toaster />
