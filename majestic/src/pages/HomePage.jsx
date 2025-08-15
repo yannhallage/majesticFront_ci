@@ -6,7 +6,7 @@ import ProductsSection from '@/components/ProductsSection';
 import { movies } from '@/data/movies';
 
 const HomePage = () => {
-    const featuredMovies = movies.slice(0, 3);
+    const featuredMovies = movies.slice(0, 7);
     const nowPlaying = movies.filter(m => m.status === 'now_playing');
     const comingSoon = movies.filter(m => m.status === 'coming_soon');
     const onDemand = movies.filter(m => m.status === 'on_demand');

@@ -61,7 +61,7 @@ const HeroCarousel = ({ movies }) => {
                         src={movie.backdropUrl}
                         alt={`Scène de ${movie.title}`}
                         className="w-full h-full object-cover"
-                        src={"https://images.unsplash.com/photo-1598482327979-dc961aadf0b3"} />
+                        src={movie.picture} />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
                     <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent" />
                 </motion.div>

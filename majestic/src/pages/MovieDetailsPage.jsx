@@ -44,7 +44,7 @@ const MovieDetailsPage = () => {
                         src={movie.backdropUrl}
                         alt={`Scène de ${movie.title}`}
                         className="w-full h-full object-cover"
-                        src="https://images.unsplash.com/photo-1598482327979-dc961aadf0b3" />
+                        src={movie.picture} />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
                 </div>
             </div>
@@ -61,7 +61,7 @@ const MovieDetailsPage = () => {
                                 src={movie.posterUrl}
                                 alt={`Affiche de ${movie.title}`}
                                 className="w-full rounded-lg shadow-2xl"
-                                src="https://images.unsplash.com/photo-1689859828745-48fd14b68ec1" />
+                                src={movie.picture} />
                         </div>
                         <div className="w-full md:w-2/3 lg:w-3/4 pt-8 md:pt-24">
                             <h1 className="text-4xl md:text-6xl font-black text-primary">{movie.title}</h1>

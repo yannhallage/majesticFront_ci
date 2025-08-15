@@ -25,7 +25,7 @@ const ProductCard = ({ product, reverse }) => {
                 <img
                     class="rounded-lg shadow-xl w-full h-auto"
                     alt={product.title}
-                    src="https://images.unsplash.com/photo-1671376354106-d8d21e55dddd" />
+                    src={product.picture} />
             </div>
             <div className="md:w-1/2 text-center md:text-left">
                 <h3 className="text-sm font-bold uppercase text-primary/70 tracking-wider">{product.category}</h3>

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { theaters } from '@/data/theaters';
 import { ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { AnimatedTestimonialsDemo } from '@/components/ui/animated-testimonials';
 
 const TheatersPage = () => {
     return (
@@ -62,6 +63,7 @@ const TheatersPage = () => {
                             </div>
                         </motion.div>
                     ))}
+                    {/* <AnimatedTestimonialsDemo /> */}
                 </div>
             </div>
         </>

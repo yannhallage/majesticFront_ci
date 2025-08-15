@@ -5,6 +5,7 @@ import { Clapperboard, UserCircle, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LoginDialog from '@/components/LoginDialog';
 import { cn } from '@/lib/utils';
+import Component from './login';
 
 const Header = () => {
     const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -62,13 +63,14 @@ const Header = () => {
                                 <Search className="h-5 w-5" />
                             </Button>
                             <Button variant="ghost" size="icon" onClick={() => setIsLoginOpen(true)}>
-                                <UserCircle className="h-5 w-5" />
+                                {/* <UserCircle className="h-5 w-5" /> */}
+                                <Component />
                             </Button>
                         </nav>
                     </div>
                 </div>
             </motion.header>
-            <LoginDialog isOpen={isLoginOpen} onOpenChange={setIsLoginOpen} />
+            
         </>
     );
 };

@@ -1,5 +1,7 @@
 import { BentoGridDemo } from "@/components/BentoGridDemo";
+// import ReusableModal from "@/components/modalTest";
 import React from "react";
+
 
 export default function OffrePage() {
     return (
@@ -80,7 +82,7 @@ export default function OffrePage() {
             </main>
 
             {/* Footer */}
-            <footer className="bg-gray-800 text-gray-300 text-xs py-4 mt-auto">
+            {/* <footer className="bg-gray-800 text-gray-300 text-xs py-4 mt-auto">
                 <div className="max-w-5xl mx-auto flex justify-center space-x-6 uppercase font-bold tracking-wide">
                     <span>100% inédit</span>
                     <span>·</span>
@@ -96,7 +98,7 @@ export default function OffrePage() {
                         <a href="#" className="hover:underline">Confidentialité</a>
                     </nav>
                 </div>
-            </footer>
+            </footer> */}
         </div>
         // <BentoGridDemo />
     );
@@ -106,8 +108,8 @@ function StepItem({ children, active = false }) {
     return (
         <div
             className={`px-4 py-1 cursor-pointer ${active
-                    ? "bg-red-600 text-white font-bold"
-                    : "text-gray-400 hover:text-white transition"
+                ? "bg-red-600 text-white font-bold"
+                : "text-gray-400 hover:text-white transition"
                 } rounded-sm`}
         >
             {children}
